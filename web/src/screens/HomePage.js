@@ -66,7 +66,7 @@ const HomePage = (props) => {
           placeholder={"หาที่เที่ยวเเล้วไปกัน..."}
           id="standard-basic"
           variant="standard"
-          sx={{ width: "100%" }}
+          sx={{ width: "60%" }}
           inputProps={{
             min: 0,
             style: {
@@ -110,7 +110,7 @@ const Trip = (props) => {
         </div>
 
         <div className={classes.mainDetail}></div>
-        <div className={[classes.tags, classes.row].join(" ")} style={{}}>
+        <div className={[classes.tags].join(" ")} style={{}}>
           <div style={{ marginRight: 10 }} className={classes.heading3}>
             หมวด -
           </div>
