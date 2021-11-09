@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Helvethaica";
+    src: url("/fonts/Helvethaica/DB Helvethaica X.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Helvethaica Bold";
+    src: url("/fonts/Helvethaica/DBHelvethaicaX-Bd.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  

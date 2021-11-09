@@ -15,6 +15,17 @@ module.exports.search = (title, description, tags, response) => {
   return trips;
 };
 
+module.exports.searchByKeyword = (keyword, response) => {
+  let trips = response.filter(
+    (trip) =>
+      trip.title.includes(keyword) ||
+      trip.description.includes(keyword) ||
+      trip.tags.includes(keyword)
+  );
+
+  return trips;
+};
+
 function intersect(a, b) {
   var t;
   if (b.length > a.length) (t = b), (b = a), (a = t); // indexOf to loop over shorter
