@@ -3,6 +3,7 @@ import classes from "./HomePage.module.css";
 import { TextField } from "@mui/material";
 import { useHistory, useLocation } from "react-router";
 import Trip from "../components/Trip";
+
 const axios = require("axios");
 
 const HomePage = (props) => {
@@ -57,13 +58,14 @@ const HomePage = (props) => {
           }}
           placeholder={"หาที่เที่ยวเเล้วไปกัน..."}
           id="standard-basic"
+          className={classes.heading1}
           variant="standard"
           sx={{ width: "60%" }}
           inputProps={{
             min: 0,
             style: {
               textAlign: "center",
-              fontSize: 20,
+              fontSize: 40,
             },
           }}
         />
