@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import {
   Route,
-  Routes,
+  Switch,
   Redirect,
   Link,
   BrowserRouter as Router,
@@ -13,9 +13,9 @@ import "./App.css";
 
 function App() {
   const routes = (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-    </Routes>
+    <Switch>
+      <Route path="/" component={HomePage} />
+    </Switch>
   );
   return (
     <div>
