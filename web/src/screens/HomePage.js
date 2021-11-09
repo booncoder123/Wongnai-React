@@ -110,7 +110,7 @@ const Trip = (props) => {
         </div>
 
         <div className={classes.mainDetail}></div>
-        <div className={[classes.tags].join(" ")} style={{}}>
+        <div className={[classes.tags, classes.row].join(" ")} style={{}}>
           <div style={{ marginRight: 10 }} className={classes.heading3}>
             หมวด -
           </div>
@@ -146,13 +146,27 @@ const Trip = (props) => {
           }}
         >
           <div className={classes.row} style={{ marginBottom: 5 }}>
-            {props.data.photos.splice(1).map((img) => {
-              return (
-                <div className={classes.smallImage}>
-                  <img src={img} alt="new" className={classes.mainImg} />
-                </div>
-              );
-            })}
+            <div className={classes.smallImage}>
+              <img
+                src={props.data.photos[1]}
+                alt="new"
+                className={classes.mainImg}
+              />
+            </div>
+            <div className={classes.smallImage}>
+              <img
+                src={props.data.photos[2]}
+                alt="new"
+                className={classes.mainImg}
+              />
+            </div>
+            <div className={classes.smallImage}>
+              <img
+                src={props.data.photos[3]}
+                alt="new"
+                className={classes.mainImg}
+              />
+            </div>
           </div>
         </div>
       </div>
